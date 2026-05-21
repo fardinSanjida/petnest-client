@@ -1,14 +1,16 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 const WishlistContext = createContext(null);
 
 export function WishlistProvider({ children }) {
-  const [wishlist, setWishlist] = useState(() => {
-    if (typeof window === "undefined") return [];
-    return JSON.parse(localStorage.getItem("petnest-wishlist") || "[]");
-  });
+  const [wishlist, setWishlist] = useState([]);
+
+  useEffect(() => {
+    const saved = JSON.parse(localStorage.getItem("petnest-wishlist") || "[]");
+    setWishlist(saved);
+  }, []);
 
   const value = useMemo(
     () => ({
