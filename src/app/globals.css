@@ -4,6 +4,134 @@
 
 
 body {
- 
   font-family: Arial, Helvetica, sans-serif;
+}
+
+footer.bg-slate-950 {
+  background: linear-gradient(135deg, #10251f 0%, #0f172a 100%) !important;
+}
+
+.dark body {
+  background: linear-gradient(135deg, #071510 0%, #111827 52%, #172033 100%);
+  color: #e2e8f0;
+}
+
+.dark .bg-white,
+.dark .bg-slate-50,
+.dark .bg-amber-50 {
+  background-color: #172033 !important;
+}
+
+.dark .bg-slate-100 {
+  background-color: #23324a !important;
+}
+
+.dark .text-slate-950,
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-700 {
+  color: #f8fafc !important;
+}
+
+.dark .text-slate-600,
+.dark .text-slate-500 {
+  color: #cbd5e1 !important;
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: #475569 !important;
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.dark .logo-light {
+  display: none;
+}
+
+.dark .logo-dark {
+  display: block;
+}
+
+.dark .theme-light-label {
+  display: none;
+}
+
+.dark .theme-dark-label {
+  display: inline;
+}
+
+.dark .hover\:bg-emerald-50:hover,
+.dark .hover\:bg-slate-50:hover,
+.dark .hover\:bg-gray-100:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: #34d399 !important;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.22);
+}
+
+.dark .hover\:text-emerald-700:hover {
+  color: inherit !important;
+}
+
+.dark .bg-emerald-700:hover,
+.dark .hover\:bg-emerald-800:hover {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.28);
+  cursor: pointer;
+}
+
+.dark .border-slate-300:hover {
+  background-color: inherit !important;
+  border-color: #34d399 !important;
+  color: inherit !important;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.22);
+  cursor: pointer;
+}
+
+.dark details a:hover,
+.dark details button:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  outline: 1px solid #34d399;
+  outline-offset: -2px;
+}
+
+.dark details summary:hover {
+  background-color: #172033 !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+  cursor: pointer;
+}
+
+.dark .profile-trigger:hover {
+  background-color: #172033 !important;
+  color: #f8fafc !important;
+  border-color: #34d399 !important;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.25);
+}
+
+.dark .profile-name,
+.dark details summary:hover .profile-name {
+  color: #f8fafc !important;
+}
+
+.dark details > div {
+  background-color: #172033 !important;
+  border-color: #475569 !important;
+}
+
+.dark .md\:hidden a:hover,
+.dark .md\:hidden button:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  outline: 1px solid #34d399;
+  outline-offset: -2px;
 }
